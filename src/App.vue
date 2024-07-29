@@ -14,8 +14,8 @@
       <div class="footer">
           <div class="email" v-if="$route.path !== '/booking'">Email: <a href="mailto:somethinglikethatclt@gmail.com">somethinglikethatclt@gmail.com</a></div>
           <div class="social-row">
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>        
+            <a href="https://www.facebook.com/SomethingLikeThatCLT" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/somethinglikethatclt" target="_blank"><i class="fab fa-instagram"></i></a>        
           </div>
       </div>
     </footer>
