@@ -19,6 +19,9 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+    @media (max-width : 767px) {
+      width: 100%;
+    }
   }
   .show {
     width: 100%;
@@ -30,6 +33,9 @@
     }
     .time {
       color: #003663;
+    }
+    @media (max-width : 767px) {
+      width: 90%;
     }
   }
 </style>

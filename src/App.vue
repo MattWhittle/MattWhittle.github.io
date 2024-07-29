@@ -33,7 +33,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
 }
 h1,h2,h3,h4,h5 {
   color: #000;
@@ -42,7 +41,6 @@ p, div {
   color: #384e7a;
 }
 .main-content{
-  flex: 1;
   width: 1100px;
   max-width: 100%;
 }
@@ -69,6 +67,7 @@ img {
   height: auto;
 }
 .footer {
+  margin-top: 30px;
   a {
     display: block;
   }
