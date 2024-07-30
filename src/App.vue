@@ -35,9 +35,15 @@
   align-items: center;
 }
 h1,h2,h3,h4,h5 {
-  color: #000;
+  color: #000013;
 }
-p, div {
+p {
+  color: #003663;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 16px;
+}
+div {
   color: #384e7a;
 }
 .main-content{

@@ -3,7 +3,7 @@
     <h1>Our upcoming events:</h1>
     <div class="upcoming-shows" >
       <div class="show" v-for="event in events" :key="event.id">
-        <div class="date"><strong>{{ formatEventDate(event.start.dateTime) }} - <span class="time">{{ formatEventDateTime(event.start.dateTime) }}</span></strong></div>
+        <div class="date"><strong>{{ formatEventDate(event.start.dateTime) }}</strong> - {{ formatEventDateTime(event.start.dateTime) }}</div>
         <div class="location"><strong>Location: </strong> <span v-html="formatLocation(event.location)"></span></div>
       </div>
     </div>
@@ -28,11 +28,12 @@
     background: #cad4e7;
     border-radius: 8px;
     padding: 16px;
-    strong {
+    .date {
       color: #000;
+      font-size: 20px;
     }
-    .time {
-      color: #003663;
+    .location {
+      font-size: 16px;
     }
     @media (max-width : 767px) {
       width: 90%;
