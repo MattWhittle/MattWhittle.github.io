@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+        // Function to redirect the user
+        function handleRedirect() {
+            var path = window.location.pathname; // Get the path part of the URL
+            var search = window.location.search; // Get the query string part of the URL
+            var hash = window.location.hash; // Get the hash part of the URL
+
+            // Construct the destination URL using the path, query string, and hash
+            var redirectTo = path + search + hash;
+
+            // Check if there’s a hash containing a path (for Vue Router in hash mode)
+            if(hash && hash.length > 1) {
+                redirectTo = hash.substring(1); // For hash mode, use the hash as the path
+            }
+
+            // Redirect to the constructed URL or the homepage ('/') if empty
+            window.location.href = redirectTo !== '/' ? redirectTo : '/';
+        }
+
+        // Call the function when the script loads
+        handleRedirect();
+    </script>
+    <title>Redirecting...</title>
+</head>
+<body>
+    <p>If you are not redirected, <a href="/">click here</a>.</p>
+</body>
+</html>
