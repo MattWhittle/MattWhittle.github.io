@@ -4,7 +4,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/shows">Shows</router-link> |
       <router-link to="/photos">Photos</router-link> |
-      <router-link to="/booking">Booking</router-link> | follow us:
+      <router-link to="/booking">Booking</router-link> | <span class="desktop-only">follow us:</span>
       <a href="https://www.instagram.com/somethinglikethatclt/reels/" target="_blank"><i class="fab fa-instagram"></i></a> 
       <a href="https://www.facebook.com/SomethingLikeThatCLT" target="_blank"><i class="fab fa-facebook-f"></i></a>
     </div>
@@ -95,6 +95,9 @@ div {
 
 #nav {
   padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 #nav a {
@@ -242,6 +245,9 @@ hr {
 }
 
 @media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
   .main-content {
     width: 100%;
     padding: 0 10px;
@@ -281,6 +287,11 @@ hr {
 
   hr {
     width: 100%;
+  }
+
+  #nav .fab {
+    font-size: 30px;
+    line-height: normal;
   }
 }
 
